@@ -18,9 +18,9 @@ export function FirstStepsApp() {
 
             {itemsInCart.map(item => (<ItemCounter key={item.productName} name={item.productName} quantity={item.quantity} />))}
 
-            <ItemCounter name="Xbox Series X" quantity={1} />
+            {/* <ItemCounter name="Xbox Series X" quantity={1} />
             <ItemCounter name="Xbox Elite Controller" quantity={2} />
-            <ItemCounter name="Gears of War E-Day" quantity={3} />
+            <ItemCounter name="Gears of War E-Day" quantity={3} /> */}
 
         </>
     )
