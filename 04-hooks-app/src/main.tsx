@@ -3,8 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 // import { InstagramApp } from './07-useOptimistic/InstagramApp'
 import { Toaster } from 'sonner'
-import { ClientInformation } from './08-use-suspense/ClientInformation'
-import { getUserAction } from './08-use-suspense/api/get-user.action'
+// import { ClientInformation } from './08-use-suspense/ClientInformation'
+// import { getUserAction } from './08-use-suspense/api/get-user.action'
+import { ProfessionalApp } from './09-useContext/ProfessionalApp'
 // import { MemoCounter } from './06-memos/MemoCounter'
 // import { MemoHook } from './06-memos/MemoHook'
 // import { HooksApp } from './HooksApp'
@@ -30,10 +31,11 @@ createRoot(document.getElementById('root')!).render(
     {/* <MemoHook /> */}
     {/* <MemoCounter /> */}
     {/* <InstagramApp /> */}
-    <Suspense fallback={(
+    {/* <Suspense fallback={(
       <div className='bg-gradient'>Cargando...</div>
     )}>
       <ClientInformation getUser={getUserAction(200)} />
-    </Suspense>
+    </Suspense> */}
+    <ProfessionalApp />
   </StrictMode>,
 )
